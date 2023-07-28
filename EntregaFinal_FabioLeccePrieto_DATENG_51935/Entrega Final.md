@@ -17,7 +17,7 @@ Los archivos a tener en cuenta son:
     * `fabio.py`: Script de Spark que ejecuta el ETL.
 
 # Pasos para ejecutar la entrega final
-1. Accede a cuenta gmail, luego ir a Gestionar tu cuenta de Google > Seguridad y activar la verificación de dos pasos para esto seguir los siguientes pasos:`https://support.google.com/accounts/answer/185839?hl=es-419&co=GENIE.Platform%3DDesktop`.
+1. Accede a cuenta gmail, luego ir a Gestionar tu cuenta de Google > Seguridad y activar la verificación de dos pasos para esto seguir los siguientes pasos: `https://support.google.com/accounts/answer/185839?hl=es-419&co=GENIE.Platform%3DDesktop`.
 2. Volver a la pestaña seguridad de la cuenta y seleccionar la opción Contraseñas de aplicaciones luego ingresar tu contraseña de login; aparecerá una nueva ventana donde elegir en aplicación correo y en dispositivo el ordenador que estés usando. Al finalizar aparecerá la contraseña de aplicación que se debe guardar (Esta es la contraseña que vamos a utlizar para la variable de ariflow `SMTP_PASSWORD` que configuraremos mas adelante).
 3. Posicionarse en la carpeta `EntregaFinal_FabioLeccePrieto_DATENG_51935`. A esta altura debería ver el archivo `docker-compose.yml`.
 4. Crear las siguientes carpetas a la misma altura del `docker-compose.yml`.
