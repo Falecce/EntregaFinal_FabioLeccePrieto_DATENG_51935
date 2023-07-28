@@ -40,13 +40,12 @@ DRIVER_PATH=/tmp/drivers/postgresql-42.5.2.jar
 docker-compose pull lucastrubiano/airflow:airflow_2_6_2
 docker-compose pull lucastrubiano/spark:spark_3_4_1
 ```
-7. Las imagenes fueron generadas a partir de los Dockerfiles ubicados en `docker_images/`. Si se desea generar las imagenes nuevamente, ejecutar los comandos que están en los Dockerfiles.
-8. Ejecutar el siguiente comando para levantar los servicios de Airflow y Spark.
+7. Ejecutar el siguiente comando para levantar los servicios de Airflow y Spark.
 ```bash
 docker-compose up --build
 ```
-9. Una vez que los servicios estén levantados, ingresar a Airflow en `http://localhost:8080/`.
-10. En la pestaña `Admin -> Connections` crear una nueva conexión con los siguientes datos para Redshift:
+8. Una vez que los servicios estén levantados, ingresar a Airflow en `http://localhost:8080/`.
+9. En la pestaña `Admin -> Connections` crear una nueva conexión con los siguientes datos para Redshift:
     * Conn Id: `redshift_default`
     * Conn Type: `Amazon Redshift`
     * Host: `host de redshift`
@@ -55,25 +54,25 @@ docker-compose up --build
     * User: `usuario de redshift`
     * Password: `contraseña de redshift`
     * Port: `5439`
-11. En la pestaña `Admin -> Connections` crear una nueva conexión con los siguientes datos para Spark:
+10. En la pestaña `Admin -> Connections` crear una nueva conexión con los siguientes datos para Spark:
     * Conn Id: `spark_default`
     * Conn Type: `Spark`
     * Host: `spark://spark`
     * Port: `7077`
     * Extra: `{"queue": "default"}`
-12. En la pestaña `Admin -> Variables` crear una nueva variable con los siguientes datos:
+11. En la pestaña `Admin -> Variables` crear una nueva variable con los siguientes datos:
     * Key: `driver_class_path`
     * Value: `/tmp/drivers/postgresql-42.5.2.jar`
-13. En la pestaña `Admin -> Variables` crear una nueva variable con los siguientes datos:
+12. En la pestaña `Admin -> Variables` crear una nueva variable con los siguientes datos:
     * Key: `spark_scripts_dir`
     * Value: `/opt/airflow/scripts`
-14. En la pestaña `Admin -> Variables` crear una nueva variable con los siguientes datos:
+13. En la pestaña `Admin -> Variables` crear una nueva variable con los siguientes datos:
     * Key: `SMTP_EMAIL_FROM`
     * Value: `Escribir el correo que usaremos para enviar el Email`
-15. En la pestaña `Admin -> Variables` crear una nueva variable con los siguientes datos:
+14. En la pestaña `Admin -> Variables` crear una nueva variable con los siguientes datos:
     * Key: `SMTP_EMAIL_TO`
     * Value: `Escribir el correo a quien le llega el Email`
-16. En la pestaña `Admin -> Variables` crear una nueva variable con los siguientes datos:
+15. En la pestaña `Admin -> Variables` crear una nueva variable con los siguientes datos:
     * Key: `SMTP_PASSWORD`
     * Value: `Escribir la contraseña, que guardamos anteriormente, del correo que usaremos`
-17. Ejecutar el DAG `etl_fabio`.
+16. Ejecutar el DAG `etl_fabio`.
