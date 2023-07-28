@@ -68,7 +68,7 @@ docker-compose up --build
     * Key: `spark_scripts_dir`
     * Value: `/opt/airflow/scripts`
 
-    (Estas variables (13,14 y 15) son necesarias para que corra el proceso SMTP de avisos por correo)
+    #(Estas variables (13,14 y 15) son necesarias para que corra el proceso SMTP de avisos por correo)
 14. En la pestaña `Admin -> Variables` crear una nueva variable con los siguientes datos:
     * Key: `SMTP_EMAIL_FROM`
     * Value: `Escribir el correo que usaremos para enviar el Email`
