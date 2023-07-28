@@ -1,5 +1,5 @@
 # Entrega Final Fabio Lecce
-Usando como guia el ejemplo de entregable 3 hecho por Lucas. Está desarrollado con Spark como framework de ETL
+Aca tenemos todo lo necesario para correr la entrega final de Fabio Lecce Prieto
 
 # Distribución de los archivos
 Los archivos a tener en cuenta son:
