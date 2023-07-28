@@ -67,8 +67,6 @@ docker-compose up --build
 13. En la pestaña `Admin -> Variables` crear una nueva variable con los siguientes datos:
     * Key: `spark_scripts_dir`
     * Value: `/opt/airflow/scripts`
-
-    #(Estas variables (13,14 y 15) son necesarias para que corra el proceso SMTP de avisos por correo)
 14. En la pestaña `Admin -> Variables` crear una nueva variable con los siguientes datos:
     * Key: `SMTP_EMAIL_FROM`
     * Value: `Escribir el correo que usaremos para enviar el Email`
@@ -77,5 +75,5 @@ docker-compose up --build
     * Value: `Escribir el correo a quien le llega el Email`
 16. En la pestaña `Admin -> Variables` crear una nueva variable con los siguientes datos:
     * Key: `SMTP_PASSWORD`
-    * Value: `Escribir el la contraseña del correo que usaremos`
+    * Value: `Escribir la contraseña, que guardamos anteriormente, del correo que usaremos`
 17. Ejecutar el DAG `etl_fabio`.
